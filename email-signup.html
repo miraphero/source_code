@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sign in with Google Account - Google Chrome</title>
+    <title>Sign up with email / phone</title>
     <link rel="shortcut icon" href="images/go.png" type="image/x-icon">
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
@@ -31,34 +31,46 @@
         <div class="modal-dialog modal-fullscreen">
             <!-- <div class="modal-header "> -->
             <div class="bg-dark w-100 d-flex">
-                <i class="fa-brands fa-google-plus-g mx-auto py-2 fa-2x" style="color: lightgray;"></i>
+                <!-- <i class="fa-brands fa-google-plus-g mx-auto py-2 fa-2x" style="color: lightgray;"></i> -->
+                <i class="fa-regular fa-envelope-open py-2 mx-auto fs-2" style="color: lightgray;"></i>
             </div>
 
             <div class="d-flex justify-content-between fw-semibold border-bottom px-5 py-2 fs-4">
-                <a class="text-decoration-none  text-dark" href="">Google ID</a>
-                <a class="text-decoration-none text-dark" href="">Sign In</a>
+                <a class="text-decoration-none  text-dark" href="">Email Address</a>
+                <a class="text-decoration-none text-dark" href="">Sign Up</a>
             </div>
             <!-- </div> -->
 
-            <div class="modal-body d-flex flex-column justify-content-center align-items-center pt-5">
+            <div class="modal-body d-flex flex-column justify-content-center align-items-center pt-2">
                 <img class="img-fluid" style="max-width: 60px; max-height: 60px;" src="images/favicon.png" alt="">
                 <br>
-                <h4>Use your Google ID to sign in to Source Code.</h4>
+                <h4>Hey! Use your Email to sign up to Source Code.</h4>
                 <br>
 
 
-
-                <div class="border px-3 py-2 rounded fs-3">
-                    <input class=" border-0" placeholder="Email" type="text" id="email" required>
+<form action="">
+                <div class="border px-3 py-2 rounded fs-5">
+                    <input class=" border-0" placeholder="Email" type="email" id="email" required>
                     <a href="#" class="text-decoration-none text-secondary"> <i
                             class="fa-solid fa-circle-arrow-right"></i>
                     </a>
                 </div>
                 <br>
-                <a class="text-decoration-none fs-5" href="">Forgot Google ID or Password? <i
+                <div class="border px-3 py-2 rounded fs-5">
+                    <input class=" border-0" placeholder="Password" type="password" id="Password" required>
+                    <a href="#" class="text-decoration-none text-secondary"> <i
+                            class="fa-solid fa-circle-arrow-right"></i>
+                    </a>
+                </div>
+        </form>
+                <br>
+                <a class="text-decoration-none fs-5" href="">Forgot Password? Reset from here<i
                         class="fa-solid fa-location-arrow"></i></a>
                 <br>
-                <i class="fa-solid fa-people-arrows text-primary fs-1"></i>
+                <div class="d-flex justify-content-between">
+                    <button type="button" class="btn btn-outline-primary me-4">Sign up</button>
+                <i class="fa-solid fa-people-arrows text-primary fs-1 ms-auto"></i>
+            </div>
                 <br>
                 <p>In setting up Sign in with Apple, information about your <br> interactions with Apple and this
                     device
@@ -68,7 +80,7 @@
                 </p>
             </div>
             <div
-                class=" bg-light d-flex flex-column justify-content-center align-items-center p-4 text-secondary fw-semibold mt-5">
+                class=" bg-light d-flex flex-column justify-content-center align-items-center p-4 text-secondary fw-semibold mt-4">
                 <p>Copyright © 2022 Google Inc. All rights reserved.</p>
                 <p>Privacy Policy.</p>
             </div>
